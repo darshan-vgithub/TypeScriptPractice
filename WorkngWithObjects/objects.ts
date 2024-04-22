@@ -6,6 +6,16 @@ const user = {
 
 function createUser({ name: string, isActive: boolean }) {}
 
-createUser({ name: "Darshan", isActive: false });
+let newUser = {
+  name: "darshan",
+  isActive: false,
+  email: "darshanv487@gmail.com",
+};
+
+createUser(newUser);
+
+function createCourse(): { name: string; age: number; work: string } {
+  return { name: "darshan", age: 23, work: "Developer" };
+}
 
 export {};
